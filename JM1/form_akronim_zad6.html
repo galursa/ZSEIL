@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logowanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	  <h2>Strona do tworzenia akronimów</h2>
+	  <form name="formularzpodziel">
+		Podaj wyraz:<br>
+		<input type="text" name="wyraz"><br>
+		<input type="button" value="Stwórz Akronim" name="podziel" onclick="wyrazPodziel()">
+	    <br>
+		Akronim:<br>
+		<input type="text" name="pierwszywyraz">
+		
+	  </form>
+<script>
+	function wyrazPodziel(){
+		z = document.formularzpodziel.wyraz.value
+		dlugosc= z.length
+		akronim=z.charAt(0)
+		i=1
+		while(i<=dlugosc)
+		{
+		   if (z.charAt(i)==" ")
+		   {   
+		        i++
+				akronim+=z.charAt(i)
+		   }
+		   i++
+		}
+  		document.formularzpodziel.pierwszywyraz.value=akronim
+
+	}
+</script>
+
+	
+</body>
+
+
+
+
+
+
+
+
+
+</html>

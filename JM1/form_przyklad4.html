@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		<form  name='formularzyk'>
+		Czy chcesz zostać na stronie?<br>
+		<input type="radio" value="tak" name="zdecyduj" checked>Tak <br> 
+		<input type="radio" value="nie" name="zdecyduj"> Nie <br>
+		<input type="button" name="dzialam" value="Wciśnij mnie" onclick="decyzja()"><br>
+		
+		</form>
+		<br>
+<script>
+function decyzja(){
+    z=document.formularzyk.elements['zdecyduj'].value
+	if (z=="nie") 
+		close()
+}
+</script>
+</body>
+</html>

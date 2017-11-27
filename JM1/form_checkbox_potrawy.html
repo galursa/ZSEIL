@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		<form  name='formularzyk'>
+		Jaka jest Twoja ulubiona potrawa?<br>
+		<input type="checkbox" value="frytki " name="fr" checked>Frytki <br> 
+		<input type="checkbox" value="hamburger " name="ha">Hamburger <br>
+		<input type="checkbox" value="zupa z soczewicy " name="zu">Zupa z soczewicy <br>
+		<input type="checkbox" value="zapiekanka " name="za">Zapiekanka <br>
+		<input type="checkbox" value="suchary " name="su">Suchary <br>
+		
+		
+		<input type="button" name="dzialam" value="Wciśnij mnie" onclick="decyzja()"><br>
+		
+		</form>
+		<br>
+<script>
+function decyzja(){
+	var napis=""
+    if(formularzyk.fr.checked)
+		napis+=formularzyk.fr.value
+	if(formularzyk.ha.checked)
+		napis+=formularzyk.ha.value
+	if(formularzyk.zu.checked)
+		napis+=formularzyk.zu.value
+	if(formularzyk.za.checked)
+		napis+=formularzyk.za.value
+	if(formularzyk.su.checked)
+		napis+=formularzyk.su.value
+		
+	alert("Twoje ulubione potrawy to: "+napis)
+}
+</script>
+</body>
+</html>

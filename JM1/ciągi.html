@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Funkcja f(x)</h1><br>
+		
+		<br>
+		<script>
+			function wyraz_13(a1,r)
+			{
+				return a1+12*r
+			}
+			document.write("Trzynasty wyraz ciągu"+wyraz_13(-1,3)+"<br>")
+			function wyraz_dowolny(a1,r,nr)
+			{
+				wynik=a1
+				for(i=2;i<=nr;i++)
+						wynik=wynik+r
+				return wynik
+			}
+			document.write("n-ty wyraz ciągu"+wyraz_dowolny(-1,3,13)+"<br>")
+			function n_wyraz_ciagu(a1,an,r)
+			{ 
+				i=2
+				wynik=a1
+				for(i;;i++)
+				{
+					wynik+=r
+					if(wynik==an)
+						break;
+				}
+				return i
+			}//function 
+			document.write(n_wyraz_ciagu(5,61,7)+"<br>")
+			function n_wyraz_geom(a1,an,q)
+			{ 
+				i=2
+				wynik=a1
+				for(i;;i++)
+				{
+					wynik*=q
+					if(wynik==an)
+						break;
+				}
+				return i
+			}//function 
+			document.write(n_wyraz_geom(25,2025,-3)+"<br>")
+		</script>
+		
+		
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

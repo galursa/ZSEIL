@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		<form  name='formularzyk'>
+		Podaj liczbę:<br>
+		<input type="text" name="liczba" ><br>
+		Podaj wykładnik potęgi:<br>
+		<input type="text" name="wykladnik" ><br>
+		Wynik:<br>
+		<input type="text" name="wynik" ><br>
+		<input type="button" name="dzialam" value="Wciśnij mnie" onclick="licze()"><br>
+		
+		</form>
+		<br>
+<script>
+function licze(){
+    a=document.formularzyk.elements['liczba'].value
+	b=document.formularzyk.elements['wykladnik'].value
+	c=Math.pow(a,b)
+	document.formularzyk.elements['wynik'].value=c
+}
+</script>
+</body>
+</html>

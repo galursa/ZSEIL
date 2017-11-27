@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Pętla for  i break</h1>
+		<script>
+			zmienna=prompt("Podaj wartość początkową do pętli","1")
+			for (zmienna;zmienna<20;zmienna++)
+			{	
+				document.write("wartośc zmienna="+zmienna+"<br>")
+				if(zmienna==10) break;
+			}
+			for (i=1;i<=10;i++)
+			{
+				liczba = prompt("Podaj liczbe","d")
+				if (liczba=="d") continue
+				document.write("Liczba w pętli "+i+" wynosi "+liczba+"<br>")
+			}
+		</script>
+		
+	</body>
+</html>

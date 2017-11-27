@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		<form name="zaokraglanie">
+			<h3>Prosze podać liczbę rzeczywistą (stosujemy kropkę zamiast przecinka):</h3><br>
+			Liczba rzeczywista:<br>
+			<input type="text" name="liczba"><br>
+			<table>
+			<tr>
+			<td>
+			<input type="button" value="Zaokrąglam w górę" name="gora" onclick="wgore()"> 
+			</td>
+			<td>
+			<input type="button" value="Zaokrąglam w dół" name="dol" onclick="wdol()"><br>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<input type="text" name="wynikgora">
+			</td>
+			<td>
+			<input type="text" name="wynikdol"><br>
+			</td>
+			</tr>
+			</table>
+			
+		</form>
+	</head>
+	<body>
+		
+<script>
+	function wgore(){
+		z = document.zaokraglanie.liczba.value
+		document.zaokraglanie.wynikgora.value=Math.ceil(z)
+	}
+	function wdol(){
+		z = document.zaokraglanie.liczba.value
+		document.zaokraglanie.wynikdol.value=Math.floor(z)
+		//document.zaokraglanie.wynikdol.value=parseInt(z)
+	}
+</script>
+
+	
+</body>
+
+
+
+
+
+
+
+
+
+</html>

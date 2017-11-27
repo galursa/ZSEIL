@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Funkcja f(x)</h1><br>
+		
+		<br>
+		<script>
+			function badaj_ciag(a1, a2, a3)
+			{
+				if ((a1==a2)&&(a2==a3))
+					alert("Ciąg:"+a1+", "+a2+", "+a3+" jest stały")
+				else if((a3>a2)&&(a2>a1))
+					alert("Ciąg:"+a1+", "+a2+", "+a3+" jest rosnący")
+				else if((a3<a2)&&(a2<a1))
+					alert("Ciąg:"+a1+", "+a2+", "+a3+" jest malejący")
+				else	
+					alert("Ciąg:"+a1+", "+a2+", "+a3+" jest niemonotoniczny")
+			}
+			badaj_ciag(1,2,3)
+			badaj_ciag(3,2,1)
+			badaj_ciag(1,1,1)
+			badaj_ciag(3,1,2)
+			function generuj_geom(a1,q,n)
+			{
+				el=a1
+				for(i=2;i<=n;i++)
+				{
+					el=el*q
+					document.write(el+", ")
+				}
+			}
+		</script>
+		
+		
+		
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

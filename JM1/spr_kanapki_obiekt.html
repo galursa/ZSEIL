@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		<form id="for" name="formularzyk" action="" method="get">
+		Tutaj możemy umieścić komunikat lub podpisać elementy formularza.
+		
+		</form>
+		<br>
+<script>
+/*function napis(zdanie)
+{
+	
+	document.write(zdanie.bold().fontcolor("blue"))
+}
+zm=prompt("Podaj","")
+napis(zm)*/
+function kanapki(pieczywo,mieso)
+{
+this.pieczywo=pieczywo
+this.mieso=mieso
+kanapki.prototype.wypisz=function()
+{
+	document.write("pieczywo: "+this.pieczywo+"<br>")
+	document.write("mieso: "+this.mieso+"<br>")
+}
+this.sprawdz_czy_wege =function()
+{
+	if (this.mieso=="")
+		document.write("Wybrałeś kanapkę wegetariańską")
+	else 
+		document.write("Wybrałeś kanapkę z mięsem")
+}
+}
+
+wege = new kanapki("bagietka","szynka")
+wege.wypisz()
+wege.sprawdz_czy_wege()   
+</script>
+
+	
+	
+</body>
+
+</html>

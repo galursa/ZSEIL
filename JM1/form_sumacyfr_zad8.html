@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suma cyfr</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		Liczymy sumę cyfr:
+		<br>
+		<form name="zaokraglam">
+			Podaj liczbę:<br>
+			<input type='text' name='liczba'><br><br>
+			<input type="button" name="gora" value="suma cyfr" onclick="suma()"><br><br>
+			Suma cyfr:<br>
+			<input type='text' name='sumacyfr'><br>
+		</form>
+<script>
+	function suma(){
+		st = document.forms['zaokraglam'].liczba.value
+		suma = 0
+		dlugosc = st.length
+		for(i=0;i<=dlugosc;i++)
+		{
+			z=st.charAt(i)
+			z=parseInt(z)
+			//suma+=parseInt(st.charAt(i))
+			suma+=z
+		}
+		document.zaokraglam.sumacyfr.value=suma
+	}
+	
+</script>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		<form id="for" name="formularzyk" action="mailto:aaa@bbb.pl" method="get">
+		Tutaj możemy umieścić komunikat lub podpisać elementy formularza. <br>
+		Podaj swoje imię<br>
+		<!--- to jest pole tekstowe -->
+		<input type="text" name="imie"><br>
+		<!--- to jest przycisk do resetowania danych -->
+		<input type='reset' value='Wyczyść formularz' name='Czyszcze'><br>
+		<!--- to jest przycisk do wysylania danych -->
+		<input type='submit' value='Wyślij' name='Wysylam'><br>
+		</form>
+		<br>
+<script>
+function powitanie(){
+	z=document.form['formularzyk'].imie.value
+	alert("Witaj"+z)
+}
+</script>
+</body>
+</html>

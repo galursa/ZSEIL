@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- kodowanie polskich znaków -->
+	<meta charset="utf-8">
+	<meta name="Generator" content="Ager Web Edytor">
+	<title>Tu jest tytu³ strony</title>
+	</head>
+	
+	<body>
+	
+Zad. <br>
+Pobraæ od u¿ytkownika nazwê ulubionej gry. Wykorzystaæ instrukcjê switch do tego by program wyœwietla³ komunikat „Twoja ulubiona gra jest gr¹ typu ... „ np.
+U¿ytkownik podaje: SimCity 3
+Wyœwietla siê komunikat: Twoja ulubiona gra jest gr¹ typu symulacyjnego.
+Proszê uwzglêdniæ co najmniej 5 przypadków i oraz przypadek default.
+   
+<h1> Rozwi¹zanie </h1>
+	<script type="text/javascript">
+		gra=prompt("Podaj nazwê ulubionej gry","Saper");
+		switch (gra){
+			case "SimCity3":
+				document.write("Twoja ulubiona gra jest gr¹ typu symulacyjnego")
+				break;
+			case "Minecraft":
+				document.write("Twoja ulubiona gra jest gr¹ typu sandbox")
+				break;
+			case "Warcraft":
+				document.write("Twoja ulubiona gra jest gr¹ typu MMORPG")
+				break;
+			case "Saper":
+				document.write("Twoja ulubiona gra jest gr¹ typu logicznego")
+				break;
+			case "GTA":
+				document.write("Twoja ulubiona gra jest gr¹ typu akcji")
+				break;
+			default:
+				document.write("Chyba nie lubisz gier?")
+				break;
+		}
+	/*
+	liczba=prompt("Podaj liczbe","2");
+		liczba=parseInt(liczba);
+		if ((liczba%2)==0) 
+			alert("Liczba "+liczba+" jest parzysta")
+		else
+			alert("Liczba "+liczba+" jest nieparzysta")
+*/
+		
+	</script>
+	
+	</body>
+</html>
+

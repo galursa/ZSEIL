@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zaokrąglanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	
+		Podaj liczbę:
+		<br>
+		<form name="kalkulator">
+			<input type='text' name='liczba'>
+			<input type="button" name="sprawdzam" value="Ilość cyfr" onclick="spr_cyfra()">
+			<input type='text' name='wynik'>
+			
+		</form>
+		
+<script>
+	function spr_cyfra(){
+		st = document.forms['kalkulator'].liczba.value
+		z= st.length
+		document.forms['kalkulator'].wynik.value=z
+	}
+	
+</script>
+
+	
+</body>
+
+</html>

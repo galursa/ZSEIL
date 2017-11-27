@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anagramy</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body onload="losuj()">
+		<h1>Witamy w grze</h1><br>
+		<form  name='formularzyk'>
+		<br>
+		Zgadnij hasło:<br>
+		Oto anagram:
+		<input type="text" name="jeden">
+		Tu wpisz swoje słowo:
+		<input type="text" name="dwa">
+		
+		<input type="button" name="sprawdz" value="Sprawdź" onclick="sprawdzaj()">
+		<br>
+		
+		<input type="text" name="ukryj" hidden>
+		</form>
+		<br>
+<script>
+function mieszaj(slowo){
+	dlugosc=slowo.length
+	tab=[]
+	for(i=0;i<dlugosc;i++)
+	{
+		tab[i]=slowo.charAt(i)
+	}
+	
+	tab.sort()
+	noweslowo='';
+	for(i=0;i<dlugosc;i++)
+	{
+		noweslowo+=tab[i]
+	}
+	
+	document.formularzyk.jeden.value=noweslowo
+	document.formularzyk.ukryj.value=slowo
+}
+
+function losuj(){
+ slowko=["kajak","broda","akumulator","lokomotywa"]
+ z=Math.random()
+ z=Math.round(z*4)
+	
+	if (z>=4)
+	 z=3
+ slowolos=slowko[z]
+ mieszaj(slowolos) 
+}
+function sprawdzaj(){
+    
+	s1=document.formularzyk.ukryj.value
+    s2=document.formularzyk.dwa.value
+    if(s1==s2)
+	  alert("Brawo. Zgadłeś słowo")	
+	else
+	 alert("Nie zgadłeś próbuj ponownie")
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- kodowanie polskich znaków -->
+	<meta charset=iso-8859-2">
+	<meta name="Generator" content="Ager Web Edytor">
+	<title>Tu jest tytuł strony</title>
+	</head>
+	
+	<body>
+	
+     
+	<script type="text/javascript">
+	document.write("Wcisnšłe przycisk\' \" " )
+	//dostępne cyfry w systemie ósemkowym: 1, 2, 3, 4, 5, 6, 7, 0
+	//dostępne cyfry w systemie szesnastkowym: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+	document.write("Jakis znak \123 " )
+	</script>
+	<script type="text/javascript">
+var lancuch = "10";
+var liczba1 = parseInt(lancuch); 
+var liczba2 = parseInt(lancuch,2); 
+var liczba3 = parseInt(lancuch,8); 
+var liczba4 = parseInt(lancuch,16); 
+var liczba5 = parseInt(lancuch,10); 
+document.write("Wprowadzony łańcuch "+lancuch+" wywietlony będzie jako liczba:<br>");
+document.write("Liczba całkowita: "+liczba1+"<br>");
+document.write("Liczba w systemie dwójkowym: "+liczba2+"<br>");
+document.write("Liczba w systemie ósemkowym: "+liczba3+"<br>");
+document.write("Liczba w systemie szesnastkowym: "+liczba4+"<br>");
+document.write("Liczba w systemie dzisiętnym: "+liczba5+"<br>");
+</script>
+
+	<noscript>
+		Przegladarka nie obsluguje skryptów lub skrypty zostały wyłšczone.
+		Strona nie będzie się wywietlać poprawnie.
+	</noscript>
+
+	</body>
+</html>
+

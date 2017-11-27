@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logowanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	  <h2>Strona do dzielenia wyrazów</h2>
+	  Podaj wyraz do podzielenia
+	  <form name="formpodziel">
+		Wyraz:<br>
+		<input type="text" name="wyraz"><br>
+		<input type="button" name="podziel" value="Podziel" onclick="wyrazPodziel()"><br>
+		<table>
+		<tr>
+		<td>
+		Wyraz 1
+		</td>
+		<td>
+		Wyraz 2 
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<input type="text" name="wyraz1">
+		</td>
+		<td>
+		<input type="text" name="wyraz2">
+		</td>
+		</tr>
+		</table>
+	 </form>	  
+<script>
+	function wyrazPodziel(){
+		z = document.formpodziel.wyraz.value
+		dl = z.length
+		i=0
+		w1=""
+		w2=""
+		while(i<=dl){
+		  if((i%2)==0){
+		    w1+=z.charAt(i)
+		  } else {
+			w2+=z.charAt(i)
+		  }
+		  i++
+		}
+		document.formpodziel.wyraz1.value=w1
+		document.formpodziel.wyraz2.value=w2
+	}
+</script>
+
+	
+</body>
+
+
+
+
+
+
+
+
+
+</html>

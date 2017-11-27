@@ -1,0 +1,10 @@
+Cookies 
+Cw02
+Wykorzystaæ ciasteczka do tego by zapisaæ kiedy u¿ytkownik ostatni raz odwiedza³ nasz¹ witrynê,
+Cw03
+Stworzyæ formularz z mo¿liwoœci¹ g³osowania:
+Czy chcesz usun¹æ zmianê czasu w Polsce?
+Tak
+Nie
+Nie wiem.
+Wykorzystaæ ciasteczka do tego by u¿ytkownik móg³ g³osowaæ tylko raz na 24 godziny. Stworzyæ mo¿liwoœæ zliczania wyników g³osowania

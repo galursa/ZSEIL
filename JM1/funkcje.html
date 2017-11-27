@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Funkcja f(x)</h1><br>
+		
+		<br>
+		<script>
+			function pitagoras(a,b)
+			{   z=a*a+b*b
+				c=Math.sqrt(z)
+				return c
+			}
+			/*document.write(pitagoras(1,2))
+			x = prompt("Podaj a")
+			y = prompt("Podaj b")
+			document.write("<br>"+pitagoras(x,y)+"<br>")*/
+			function wyraz_13(a1,r)
+			{	wyraz=a1
+				for(i=2;i<=13;i++)
+				{
+					wyraz=wyraz+r
+				}
+				return wyraz
+			}
+			document.write(wyraz_13(3,12))
+			function wyraz_n(a1,r,n)
+			{	wyraz=a1
+				for(i=2;i<=n;i++)
+				{
+					wyraz=wyraz+r
+				}
+				return wyraz
+			}
+			document.write("<br>"+wyraz_n(1,1,5)+"<br>")
+			function ktore_n(a1,an,r)
+			{
+				wynik=a1
+				for(i=2;;i++)
+				{
+					wynik=wynik+r
+					if (wynik==an)
+						
+							break;
+				}
+				return i
+			}
+			document.write(ktore_n(1,6,1))
+		</script>
+		
+		
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

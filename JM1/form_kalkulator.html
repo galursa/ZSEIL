@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zaokrąglanie</title>
+		<meta charset='UTF-8'>
+
+	</head>
+		
+	<body>
+	
+	<center>
+		Podaj dwie liczby i wciśnij odopowiedni przycisk z działaniem.
+		<br>
+		<form name="kalkulator">
+			
+			<table>
+			<tr>
+			<td>
+			<input type='text' name='liczba1'>
+			</td>
+			<td>
+			<input type='text' name='liczba2'>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			x
+			</td>
+			<td>
+			y
+			</td>
+			</tr>
+			</table>
+			<input type="button" name="plus" value="+" onclick="dodaj()">&nbsp;
+			<input type="button" name="minus" value="-" onclick="odejmij()">&nbsp;
+			<input type="button" name="razy" value="*" onclick="mnoz()">
+			&nbsp;
+			<input type="button" name="dziele" value="/" onclick="dziel()">
+			&nbsp;<br>
+			<input type='text' name='wynik'>
+		</form>
+		</center>
+<script>
+	function dodaj(){
+		st = parseFloat(document.forms['kalkulator'].liczba1.value)+parseFloat(document.forms['kalkulator'].liczba2.value)
+		document.forms['kalkulator'].wynik.value=st
+	}
+	function odejmij(){
+		st = document.forms['kalkulator'].liczba1.value-document.forms['kalkulator'].liczba2.value
+		document.forms['kalkulator'].wynik.value=st
+	}
+	function mnoz(){
+		st = document.forms['kalkulator'].liczba1.value*document.forms['kalkulator'].liczba2.value
+		document.forms['kalkulator'].wynik.value=st
+	}
+	function dziel(){
+		st = document.forms['kalkulator'].liczba1.value/document.forms['kalkulator'].liczba2.value
+		document.forms['kalkulator'].wynik.value=st
+	}
+</script>
+
+	
+</body>
+
+</html>

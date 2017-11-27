@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<title>Odbieranie danych z nietypowych pól formularza</title>
+<meta charset='UTF-8'>
+
+<form name="duzyformularz">
+	<h1>text</h1>
+<input  type=”text” name=”nazwa” value=” ” size=”30”>
+<br>
+
+<h1> input type=radio - jeden wybór</h1>
+
+<input type="radio" name="plec" value="M"> 
+mężczyzna
+<br>
+<input type="radio" name="plec" value="K"> 
+kobieta
+
+<br><br>
+
+<input type="radio" name="18lat" value="T"> 
+pełnoletni
+<br>
+<input type="radio" name="18lat" value="N"> 
+niepełnoletni
+
+<h1> input type=checkbox - wielokrotny wybór</h1>
+
+<input type="checkbox" name="cb1" value="niebieski"> 
+kolor niebieski
+<br>
+<input type="checkbox" name="cb2" value="czerwony"> 
+kolor czerwony	
+<br>
+Przyciski:
+<input type="submit" value="wyślij" name="wysylam">
+<input type="reset" value="kasuje dane" name="kasuje">
+<input type="button" value="inny przycisk" name="inny">
+
+	<h1>textarea</h1>
+	<textarea name='ta1'>
+	</textarea>
+
+	<br>
+	
+	
+<h1>znaczniki select option</b> - lista rozwijana</h1>
+
+<select name="jezyki" multiple>
+<option value="angielski"> angielski</option>
+<option value="niemiecki">niemiecki</option>
+<option value="rosyjski">rosyjski</option>
+<option value="szwedzki" selected>szwedzki</option>
+</select>
+	<br>
+e-mail:<input  type='email' id='email' name='email' value='' size='30'>
+<br>
+haslo: <br>
+<input  type='password' id='haslo' name='haslo' value='' size='30'>
+<br>
+	
+	
+<h1> znacznik datalist
+- pole na wartość z propozycjami</h1>
+
+  <input list="propozycja_odpowiedzi" name='pole1'>
+  <datalist id="propozycja_odpowiedzi">
+    <option value="Odpowiedź pierwsza">
+    <option value="Odpowiedź druga">
+    <option value="Odpowiedź trzecia">
+    <option value="Odpowiedź czwarta"> 
+  </datalist> 	
+<br>	
+<h1> input type=color - wybór koloru</h1>
+
+<input type="color" name="ulubiony_kolor">
+
+
+
+
+<h1> input type=date - wybór daty</h1>
+
+<input type="date" name="urodziny">
+
+	
+<h1> input type=file - wybór pliku</h1>
+
+<input type="file" name="plik">
+
+
+</form>
+
+
+
+
+
+
+
+
+

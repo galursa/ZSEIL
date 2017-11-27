@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		Zapisać w tablicy jednowymiarowej elementy, które są podzielne jednocześnie przez 2 i przez 3. Wynik wyświetlić w przeglądarce
+		<br>
+<script>
+try{
+	tablica = []
+	//tablica = new Array()
+	z=0
+	for(i=0;i<100;i++)
+	{
+	  if(((i%2)==0)&&((i%3)==0))
+	  {
+	    tablica[z]=i
+		document.write(tablica[z]+" ")
+		z++;		
+	  }
+	}
+} 
+catch(e)
+{
+	alert(e.message)
+}
+</script>
+Wykorzystując odpowiednie metody i własności wbudowane wyświetlić napis, który będzie pogrubiony i o kolorze niebieskim.<br>
+<script>
+function zmien_napis(napis,kolor)
+{
+	document.write(napis.bold().fontcolor(kolor)+"<br>")
+}
+/*
+zm=prompt("Podaj zdanie","")
+zk=prompt("Podaj kolor","")
+zmien_napis(zm,zk)*/
+</script>
+<br><br>
+Wymyślamy obiekt
+<br>
+<script>
+function pizza(nazwa, ciasto, ser, mieso, dodatki, cena)
+{
+	this.nazwa=nazwa
+	this.ciasto=ciasto
+	this.ser=ser
+	this.mieso=mieso
+	this.dodatki=dodatki
+	this.cena=cena
+	this.wypisz = function()
+	{
+		document.write("Nazwa: "+this.nazwa+"<br>")
+		document.write("Rodzaj ciasta: "+this.ciasto+"<br>")
+		document.write("Ser: "+this.ser+"<br>")
+		document.write("Rodzaj miesa: "+this.mieso+"<br>")
+		document.write("Dodatki: "+this.dodatki+"<br>")
+		document.write("Kosztuje: "+this.cena+"<br>")
+	}
+	this.sprawdzCzyWege = function()
+	{
+	 if (this.mieso=="")
+		document.write("Wybrano pizzę wegetariańską"+"<br>")
+	 else
+		document.write("Wybrano pizzę z mięsem"+"<br>")
+	}
+}
+ hawajska = new pizza()
+ hawajska.nazwa="Hawajska"
+ hawajska.mieso="szynka"
+ hawajska.cena=20.50
+ hawajska.wypisz()
+ wege = new pizza("Wegetarianska","Grube","sojowy","","oliwki",15.00)
+ wege.wypisz()
+ hawajska.sprawdzCzyWege()
+ wege.sprawdzCzyWege()
+</script>
+
+
+</body>
+
+</html>

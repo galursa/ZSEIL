@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- kodowanie polskich znaków -->
+	<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+	
+	<title>Ró¿ne obliczenia</title>
+	</head>
+	<body>
+	<script>
+	var x1, x2, y1, y2, xsr,ysr;
+	x1=prompt("Podaj wartoœæ x1","1");
+	x2=prompt("Podaj wartoœæ x2","1");
+	y1=prompt("Podaj wartoœæ y1","1");
+	y2=prompt("Podaj wartoœæ y2","1");
+	x1=parseInt(x1);
+	x2=parseInt(x2);
+	y1=parseInt(y1);
+	y2=parseInt(y2);
+	xsr=(x1+x2)/2;
+	ysr=(y1+y2)/2;
+	document.write("P("+xsr+","+ysr+")<br>");
+	//cw11
+	var a, b;
+	a=prompt("Podaj a","");
+	b=prompt("Podaj b","");
+	a=parseFloat(a);
+	b=parseFloat(b);
+	var x1=1, x2=2, x3=3;
+	document.write("f(x)="+a+"x+"+b+"<br>");
+	document.write("f("+x1+")="+(a*x1+b)+"<br>");
+	document.write("f(x)="+a+"x+"+b+"<br>");
+	document.write("f("+x2+")="+(a*x2+b)+"<br>");
+	document.write("f(x)="+a+"x+"+b+"<br>");
+	document.write("f("+x3+")="+(a*x3+b)+"<br>");
+	
+	</script>
+	
+	</body>
+</html>
+

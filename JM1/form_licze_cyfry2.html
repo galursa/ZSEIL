@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Liczę cyfry</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		Podaj kąt w stopniach a potem naciśnij <i>oblicz</i>:
+		<br>
+		<form name="trygusy">
+			Podaj cyfrę: <br>
+			<input type='text' name='cyfra'><br>
+			<input type="button" name="licz" value="Oblicz" onclick="oblicz()"><br>
+			Liczba cyfr w liczbie: <br>
+			<input type="text" name="liczbacyfr">
+			
+<script>
+	function oblicz(){
+		st = document.forms['trygusy'].cyfra.value
+		var ilosc=st.length
+		
+		document.trygusy.liczbacyfr.value=ilosc		
+	}
+</script>
+
+	
+</body>
+
+</html>

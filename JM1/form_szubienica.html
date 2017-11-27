@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zgaduj wyrazy</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body onload="losuj()">
+		<h1>Witamy w grze</h1><br>
+		<form  name='formularzyk'>
+		<br>
+		Zgadnij hasło:<br>
+		<input type="text" name="jeden"><input type="text" name="dwa">
+		<input type="text" name="trzy"><input type="text" name="cztery">
+		<input type="text" name="piec"><br>
+		<input type="button" name="sprawdz" value="Sprawdź" onclick="sprawdzaj()">
+		<br>
+		Zostało Ci jeszcze <input type="text" name="blad" value="3"> prób.<br>
+		<input type="text" name="ukryj" hidden>
+		</form>
+		<br>
+<script>
+function losuj(){
+	tab = ['kajak','konik','kołek']
+	z=Math.random()
+	z=Math.round(z*3)
+	
+	if (z>=3)
+	 z=2
+	document.formularzyk.ukryj.value=tab[z]
+}
+
+function koniec(ile)
+{
+	if(ile<=0)
+		alert("Koniec gry")
+}
+
+
+function sprawdzaj(){
+	slowo=document.formularzyk.ukryj.value
+    blad=document.formularzyk.blad.value
+	s0=document.formularzyk.jeden.value
+	s1=document.formularzyk.dwa.value
+	s2=document.formularzyk.trzy.value
+	s3=document.formularzyk.cztery.value
+	s4=document.formularzyk.piec.value
+	if ((s0!='')&&(s0!=slowo.charAt(0)))
+	{
+		blad--
+		
+	}
+	if ((s1!='')&&(s1!=slowo.charAt(1)))
+	{
+		blad--
+		
+	}
+	if ((s2!='')&&(s2!=slowo.charAt(2)))
+	{
+		blad--
+		
+	}
+	if ((s3!='')&&(s3!=slowo.charAt(3)))
+	{
+		blad--
+		
+		}
+	if ((s4!='')&&(s4!=slowo.charAt(4)))
+	{
+		blad--
+		
+	}
+	koniec(blad)
+	document.formularzyk.blad.value=blad
+}
+
+</script>
+</body>
+</html>

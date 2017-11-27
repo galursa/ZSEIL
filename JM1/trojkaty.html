@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trójkąty i ich wykorzystanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Trójkąty</h1><br>
+		
+		<br>
+<script>
+  function Trojkaty(a, b, c, rodzaj)
+  {
+    this.a = a
+	this.b = b
+	this.c = c
+	this.rodzaj = rodzaj
+	
+	Trojkaty.prototype.dodajH = function()
+	{
+		h=prompt("Podaj wysokosc","")
+		this.h=h
+	}
+	Trojkaty.prototype.obliczObwod = function()
+	{
+		obwod = this.a+this.b+this.c
+		return obwod
+	}
+	
+  }
+  trojkat = new Trojkaty(1,2,3,"inny",3)
+  zmienna = trojkat.obliczObwod()
+  alert(zmienna)
+  trojkat.dodajH()
+  alert(trojkat.h)
+</script>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Witamy w programie</h1><br>
+		<form  name='formularzyk'>
+		Podaj swoje imię<br>
+		<input type="text" name="imie"><br>
+		<input type="button" name="dzialam" value="Wciśnij mnie" onclick="powitanie()"><br>
+		
+		</form>
+		<br>
+<script>
+function powitanie(){
+    z=document.formularzyk.elements['imie'].value
+//	z=document.forms['formularzyk'].imie.value
+	alert("Witaj "+z)
+}
+</script>
+</body>
+</html>

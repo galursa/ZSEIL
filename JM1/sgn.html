@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularz</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		<h1>Funkcja f(x)</h1><br>
+		
+		<br>
+		<script>
+			function f_od_x(x)
+			{
+				return 2*x+3
+			}
+/*			x1=prompt("Podaj x1","")
+			x2=prompt("Podaj x2","")
+			x3=prompt("Podaj x3","")
+			x1=parseInt(x1)
+			x2=parseInt(x2)
+			x3=parseInt(x3)
+			document.write("f("+x1+")="+f_od_x(x1)+"<br>")
+			document.write("f("+x2+")="+f_od_x(x2)+"<br>")
+			document.write("f("+x3+")="+f_od_x(x3)+"<br>")
+			*/
+			function sgn(x)
+			{
+				if (x<0)
+					return -1
+				else if(x==0)	
+					return 0
+				else
+					return 1
+			}
+		function sumaxy(x,y)
+		{
+			if(y<x)
+			{
+				z=x
+				x=y
+				y=z
+			}
+			wynik=0;
+			for(i=x;i<=y;i++)
+				wynik=wynik+i
+			return wynik
+		}
+		cos1=prompt("Podaj liczbe x","5")
+		cos2=prompt("Podaj liczbe y","5")
+		cos1=parseInt(cos1)
+		cos2=parseInt(cos2)
+		licze = sumaxy(cos1,cos2)
+		alert("A wynik sumy to: "+licze)
+
+		</script>
+		
+		
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

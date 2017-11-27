@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logowanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	  <h2>Strona do skracania wyrazów</h2>
+	  <form name="formularzpodziel">
+		Podaj wyraz:<br>
+		<input type="text" name="wyraz"><br>
+		<input type="button" value="Skróć" name="podziel" onclick="wyrazPodziel()">
+	    <br>
+		<input type="text" name="pierwszywyraz">
+		
+	  </form>
+<script>
+	function wyrazPodziel(){
+		z = document.formularzpodziel.wyraz.value
+		dlugosc= z.length
+		wyraz1=""
+		for(i=0;i<3;i++)
+		{
+	     wyraz1+=z.charAt(i)
+		}
+		for(i=dlugosc-3;i<=dlugosc;i++)
+		{
+	     wyraz1+=z.charAt(i)
+		}
+		document.formularzpodziel.pierwszywyraz.value=wyraz1
+
+	}
+</script>
+
+	
+</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mediana</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	
+		Licze medianę, czyli liczbę środkową<br>
+		Podaj trzy liczby i wciśnij przycisk.<br>
+		<br>
+		<form name="kalkulator">
+			<input type='text' name='liczba'><br>
+			<input type='text' name='liczba2'><br>
+			<input type='text' name='liczba3'><br>
+			<input type="button" name="sprawdzam" value="Mediana" onclick="mediana()">
+			<input type='text' name='wynik'>
+			
+		</form>
+		
+<script>
+	function mediana(){
+		s1 = document.forms['kalkulator'].liczba.value
+		s2 = document.forms['kalkulator'].liczba2.value
+		s3 = document.forms['kalkulator'].liczba3.value
+		//nie zawsze daje poprawne wyniki
+		if (s1<s2){
+			if(s2<s3)
+				z=s2
+			else{ // s1< s2>s3
+				if(s1>s3)
+				 z=s1
+				else
+				 z=s3
+			}
+		} else{ //s1>s2
+			if(s2>s3)
+				z=s2
+			else{ //s1>  s2<s3<s
+			if(s3<s1)
+				z=s3
+			else 
+				z=s1
+			}
+		}
+			
+		
+		document.forms['kalkulator'].wynik.value=z
+	}
+	
+</script>
+
+	
+</body>
+
+</html>

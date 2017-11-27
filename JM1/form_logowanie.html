@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logowanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	   <h1> W celu rejestracji proszę podać dane:</h1>
+		<form name="logowanie">
+		Imię:<br>
+		<input type="text" name="imie"><br>
+		Nazwisko:<br>
+		<input type="text" name="nazwisko"><br>
+		e-mail:<br>
+		<input type="e-mail" name="email"><br>
+		hasło:<br>
+		<input type="password" name="haslo1"><br>
+		powtórz hasło:<br>
+		<input type="password" name="haslo2"><br>
+		<input type="submit" value="Zaloguj" name="logprzycisk" onclick="sprawdz()">
+		</form>
+<script>
+ function sprawdz(){
+	z=document.logowanie.imie.value
+	komunikat="Proszę podać wartość w polach:"
+	zmiana="false"
+	if (z=="")
+	{
+	  komunikat+="\n imie,"
+	  zmiana="true"
+	}
+	z1=document.logowanie.nazwisko.value
+	if (z1.length==0)
+	{
+		komunikat+="\n nazwisko,"
+		zmiana="true"
+	}
+	z2=document.logowanie.email.value
+	if(z2==""){
+		komunikat+="\n email,"
+		zmiana="true"
+	}
+		z3=document.logowanie.haslo1.value
+	if(z3==""){
+		komunikat+="\n haslo,"
+		zmiana="true"
+	}
+	z4=document.logowanie.haslo2.value
+	if(z4==""){
+		komunikat+="\n powtórz haslo,"
+		zmiana="true"
+	}
+	if(z3!=z4)
+	{
+		komunikat+="\n Podane hasła nie są identyczne"
+		zmiana="true"
+	}
+	if(zmiana=="true")
+		alert(komunikat)
+ }	
+</script>
+
+	
+</body>
+
+
+
+
+
+
+
+
+
+</html>

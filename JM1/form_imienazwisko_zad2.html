@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logowanie</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+	  <h2>Prawidłowe dane</h2>
+	  Proszę podać dane:
+	  <form name="formpodziel">
+		Imię:<br>
+		<input type="text" name="imie"><br>
+		Nazwisko:<br>
+		<input type="text" name="nazwisko"><br><br>
+		
+		<input type="button" name="podziel" value="Popraw" onclick="wyrazZamiana()"><br><br>
+		Dane poprawione:<br>
+		<input type="text" name="imieinazwisko">
+		
+	 </form>	  
+<script>
+	function wyrazZamiana(){
+		im = document.formpodziel.imie.value
+		na = document.formpodziel.nazwisko.value
+		imdl = im.length
+		nadl= na.length
+		wyraz=""
+		pom=""
+		pom=im.charAt(0)
+		wyraz+=pom.toUpperCase()
+		pom=im.substring(1,imdl)
+		wyraz+=pom.toLowerCase()
+		wyraz+=" "
+		pom=na.charAt(0)
+		wyraz+=pom.toUpperCase()
+		pom=na.substring(1,nadl)
+		wyraz+=pom.toLowerCase()
+		
+		document.formpodziel.imieinazwisko.value=wyraz
+	}
+</script>
+
+	
+</body>
+
+
+
+
+
+
+
+
+
+</html>

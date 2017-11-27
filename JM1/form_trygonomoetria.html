@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Szubienica (gra)</title>
+		<meta charset='UTF-8'>
+		
+	</head>
+	<body>
+		Podaj kąt w stopniach a potem naciśnij <i>oblicz</i>:
+		<br>
+		<form name="trygusy">
+			<input type='text' name='stopnie'>
+			<input type="button" name="licz" value="Oblicz" onclick="oblicz()"><br>
+			<table>
+			<tr>
+			<td>
+			<input type="text" name="sinus">
+			</td>
+			<td>
+			<input type="text" name="cosinus">
+			</td>
+			<td>
+			<input type="text" name="tangens">
+			</td>
+			<td>
+			<input type="text" name="cotangens"><br>
+			<td>
+			</tr>
+			<tr>
+			<td>
+				sin x
+			</td>
+			<td>
+				cos x
+			</td>
+			<td>
+				tg x
+			</td>
+			<td>
+				ctg x
+			</td>
+			</tr>
+			</table>
+			
+		</form>
+<script>
+	function oblicz(){
+		st = document.forms['trygusy'].stopnie.value
+		//sinus
+		st=st*Math.PI/180
+		document.forms['trygusy'].sinus.value= Math.sin(st)
+		document.forms['trygusy'].cosinus.value= Math.cos(st)
+		document.forms['trygusy'].tangens.value= Math.tan(st)
+		document.forms['trygusy'].cotangens.value= 1/Math.tan(st)
+	}
+</script>
+
+	
+</body>
+
+</html>
